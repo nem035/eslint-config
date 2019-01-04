@@ -8,7 +8,6 @@ module.exports = {
     'plugin:import/warnings',
     'plugin:import/errors',
     'plugin:promise/recommended',
-    'plugin:node/recommended',
   ],
   plugins: ['import', 'prettier', 'promise'],
   rules: {
@@ -64,19 +63,5 @@ module.exports = {
     ],
     'prettier/prettier': 'error',
     radix: ['error', 'as-needed'],
-    'node/no-unsupported-features/es-syntax': [
-      'error',
-      {
-        version: '>=8.10.0',
-        ignores: [],
-      },
-    ],
-    'node/no-unsupported-features/es-builtins': [
-      'error',
-      {
-        version: '>=8.10.0',
-        ignores: [],
-      },
-    ],
   },
 };
